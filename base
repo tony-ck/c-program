@@ -207,4 +207,24 @@ int main()
     return 0;
 }
 
+8.输入两个正整数m和n，求其最大公约数和最小公倍数。
+#include<stdio.h>
+
+int main()
+{	//求最大公约数
+	int m,n,i,I;
+	    scanf("%d",&m);
+	    scanf("%d",&n);
+	    for(i=m;i>=1;i--){
+		if(m%i==0 && n%i==0)
+			{
+		    break;
+			}
+		}
+	 I=m*n/i;//最小公倍数等于两数之积除以最大公约数
+	 printf("%d %d\n",i,I);
+
+    return 0; 
+}
+
 
