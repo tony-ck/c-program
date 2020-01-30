@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main ()
+{
+	int a,b;
+   /* for 循环执行 */
+   for(a = 0; a < 10; a ++ )
+   {
+   		for(b = 0; b < a; b ++ ){
+   			printf("*");
+   			printf(" ");
+		}
+		printf("\n");
+		printf(" ");
+   }
+ 
+   return 0;
+}
+
+直角三角形
